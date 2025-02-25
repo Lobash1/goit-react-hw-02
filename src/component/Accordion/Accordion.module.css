@@ -1,0 +1,39 @@
+/* Accordion container */
+.accordion {
+  max-width: 400px;
+  margin: auto;
+  font-family: Arial, sans-serif;
+}
+
+/* Accordion item */
+.item {
+  border-bottom: 1px solid #ddd;
+}
+
+/* Accordion button */
+.button {
+  width: 100%;
+  background: #f5f5f5;
+  border: none;
+  text-align: left;
+  padding: 10px;
+  font-size: 16px;
+  cursor: pointer;
+  outline: none;
+  transition: background 0.3s ease;
+}
+
+.button:hover {
+  background: #e0e0e0;
+}
+
+.button:focus {
+  background: #dcdcdc;
+}
+
+.content {
+  margin: 0;
+  padding: 10px;
+  background: #fafafa;
+  border-left: 3px solid #007bff;
+}

@@ -1,0 +1,22 @@
+.container {
+  max-width: 1170px;
+  margin: 0 auto;
+}
+
+.title {
+  text-align: center;
+  padding: 50px;
+}
+
+.btn {
+  width: 100%;
+  background: #f472c9;
+  border: 2;
+  text-align: center;
+  padding: 10px;
+  font-size: 22px;
+  cursor: pointer;
+  outline: none;
+  transition: background 0.3s ease;
+  margin: 40px;
+}
