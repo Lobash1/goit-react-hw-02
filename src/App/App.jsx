@@ -1,9 +1,9 @@
 import { useState, useEffect } from "react";
-import Description from "./component/Description/Description";
-import Options from "./component/Options/Options";
+import Description from "../components/Description/Description";
+import Options from "../components/Options/Options";
+import Feedback from "../components/Feedback/Feedback";
+import Notification from "../components/Notification/Notification";
 import css from "./App.module.css";
-import Feedback from "./component/Feedback/Feedback";
-import Notification from "./component/Notification/Notification";
 
 export default function App() {
   // Ініціалізація стану з локального сховища
