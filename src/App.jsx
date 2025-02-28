@@ -1,14 +1,14 @@
-import { useState, useEffect } from 'react';
-import Description from '../Description/Description';
-import Options from '../Options/Options';
-import css from './App.module.css';
-import Feedback from '../Feedback/Feedback';
-import Notification from '../Notification/Notification';
+import { useState, useEffect } from "react";
+import Description from "./component/Description/Description";
+import Options from "./component/Options/Options";
+import css from "./App.module.css";
+import Feedback from "./component/Feedback/Feedback";
+import Notification from "./component/Notification/Notification";
 
 export default function App() {
   // Ініціалізація стану з локального сховища
   const getSaved = () => {
-    const saved = localStorage.getItem('feedback');
+    const saved = localStorage.getItem("feedback");
     return saved ? JSON.parse(saved) : { good: 0, neutral: 0, bad: 0 };
   };
   // Використовуємо useState для зберігання стану
@@ -16,7 +16,7 @@ export default function App() {
 
   // Використовуємо useEffect для запису в локальне сховище при зміні feedback
   useEffect(() => {
-    localStorage.setItem('feedback', JSON.stringify(feedback));
+    localStorage.setItem("feedback", JSON.stringify(feedback));
   }, [feedback]);
 
   //обновляem состояние (feedback) при клике на кнопку.
@@ -27,7 +27,7 @@ export default function App() {
         [feedbackType]: prevState[feedbackType] + 1,
       };
       // Запис в локальне сховище після зміни стану
-      localStorage.setItem('feedback', JSON.stringify(newFeedback));
+      localStorage.setItem("feedback", JSON.stringify(newFeedback));
       return newFeedback;
     });
   };
